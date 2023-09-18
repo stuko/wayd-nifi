@@ -1,0 +1,3 @@
+keytool -genkey -v -keystore D:/workspace/nifi/output/nifi-keystore -alias nifi-key -keyalg RSA -keysize 2048 -validity 10000
+keytool -export -alias nifi-key -keystore D:/workspace/nifi/output/nifi-keystore -rfc -file trust-nifi.cer
+keytool -import alias nifi-key trust-nifi.cer -keystore cacerts -storepass wjrwo1004!
