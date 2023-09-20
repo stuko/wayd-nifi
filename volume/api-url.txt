@@ -1,0 +1,1 @@
+https://apis.data.go.kr/1160100/service/GetCorpBasicInfoService_V2/getCorpOutline_V2?serviceKey=LbgOd407N0%2BqvIBC5f3JDdaZMOANk0csJLKN%2B89d3qxJjgMcOAsAplsqc3QFEtLlQtRjO92RjQXuilAI4bEbrg%3D%3D&pageNo=${counter}&numOfRows=1000&resultType=json

@@ -1,0 +1,41 @@
+create table fin_api_collect
+(
+  actnAudpnNm varchar(100), /* 대주회계법인 */
+  audtRptOpnnCtt varchar(255),/* 적정의견 */ 
+  bzno varchar(20),/* 1088150292 */
+  corpDcd varchar(20),
+  corpDcdNm varchar(255),
+  corpEnsnNm varchar(255), /* MOTREX CO., LTD */
+  corpNm varchar(255), /* 모트렉스 주식회사 */
+  corpRegMrktDcd varchar(1) , /* A */
+  corpRegMrktDcdNm varchar(50), /* 코스닥 */
+  crno varchar(50), /* 1101112341850 */
+  empeAvgCnwkTermCtt varchar(50), /* 4년 6개월 */
+  enpBsadr varchar(255), /* 경기도 성남시 분당구 황새울로258번길 25 서영빌딩 12층 */
+  enpDtadr varchar(255),
+  enpEmpeCnt smallint, /* 367 */
+  enpEstbDt varchar(8), /* 20011001 */
+  enpFxno varchar(50), /* 02-3439-1360 */
+  enpHmpgUrl varchar(50), /* www.motrex.co.kr */
+  enpKosdaqLstgAbolDt varchar(20),
+  enpKosdaqLstgDt varchar(20), /* 17/08/04 */
+  enpKrxLstgAbolDt varchar(20),
+  enpKrxLstgDt varchar(20),
+  enpMainBizNm varchar(50),
+  enpMntrBnkNm varchar(50),
+  enpOzpno varchar(6), /* 13595 */
+  enpPbanCmpyNm varchar(50), /* 모트렉스 */
+  enpPn1AvgSlryAmt integer, /* 51698000 */
+  enpRprFnm varchar(50), /* 이형환 */
+  enpStacMm varchar(10), /* 12 */
+  enpTlno varchar(20), /* 070-4862-6100 */
+  enpXchgLstgAbolDt varchar(20),  /* 2023/02/17 */
+  enpXchgLstgDt varchar(20),
+  fssCorpChgDtm varchar(20),
+  fssCorpUnqNo varchar(20),
+  fstOpegDt varchar(20), 
+  lastOpegDt varchar(20), 
+  sicNm varchar(20), 
+  smenpYn varchar(1),
+  primary key(bzno)
+)
