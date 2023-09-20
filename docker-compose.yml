@@ -16,7 +16,7 @@ services:
     networks:
       - nifinet
     volumes:
-      - d:/workspace/nifi/volume:/volume
+      - C:/workspace/nifi/wayd-nifi/volume:/volume
     environment:
       - NIFI_WEB_HTTP_PORT=8080
       - NIFI_CLUSTER_IS_NODE=true
@@ -24,6 +24,39 @@ services:
       - NIFI_ZK_CONNECT_STRING=zookeeper:2181
       - NIFI_ELECTION_MAX_WAIT=1 min
 
+<<<<<<< HEAD
+=======
+  nifi02:
+    image: apache/nifi:1.11.4
+    ports:
+      - 6979:8080
+    networks:
+      - nifinet
+    volumes:
+      - C:/workspace/nifi/wayd-nifi/volume:/volume
+    environment:
+      - NIFI_WEB_HTTP_PORT=8080
+      - NIFI_CLUSTER_IS_NODE=true
+      - NIFI_CLUSTER_NODE_PROTOCOL_PORT=8082
+      - NIFI_ZK_CONNECT_STRING=zookeeper:2181
+      - NIFI_ELECTION_MAX_WAIT=1 min
+
+  nifi03:
+    image: apache/nifi:1.11.4
+    ports:
+      - 6978:8080
+    networks:
+      - nifinet
+    volumes:
+      - C:/workspace/nifi/wayd-nifi/volume:/volume
+    environment:
+      - NIFI_WEB_HTTP_PORT=8080
+      - NIFI_CLUSTER_IS_NODE=true
+      - NIFI_CLUSTER_NODE_PROTOCOL_PORT=8082
+      - NIFI_ZK_CONNECT_STRING=zookeeper:2181
+      - NIFI_ELECTION_MAX_WAIT=1 min
+
+>>>>>>> ed0461beea01331e5d56c5758adff5af87cdf6bb
 networks:
   nifinet:
     driver: bridge
