@@ -10,13 +10,14 @@ services:
       - nifinet
 
   nifi01:
-    image: apache/nifi:latest
+    image: apache/nifi:1.11.4
     ports:
       - 6980:8080
     networks:
       - nifinet
     volumes:
       - d:/workspace/nifi/volume:/volume
+#      - d:/workspace/nifi/volume/conf/nifi.properties:/opt/nifi/nifi-current/conf/nifi.properties
     environment:
       - NIFI_WEB_HTTP_PORT=8080
 #       - NIFI_CLUSTER_IS_NODE=true
