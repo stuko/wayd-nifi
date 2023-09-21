@@ -6,6 +6,7 @@
 
 # ignore all json files whose name begin with 'temp-'
 temp-*.json
+*.log
 
 # only ignore the build.log file in current directory, not those in its subdirectories
 /build.log
